@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Mission Ukraine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes slowScroll {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
+    .scroll-container {
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+    .scroll-content {
+      animation: slowScroll 60s linear infinite;
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-gray-900">
+  <!-- Navigation -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-xl font-bold">Water Mission Ukraine</div>
+      <ul class="flex gap-4 text-sm font-medium">
+        <li><a href="#mission" class="hover:underline">Mission</a></li>
+        <li><a href="#strategy" class="hover:underline">Ukraine Strategy</a></li>
+        <li><a href="#eu" class="hover:underline">EU Compliance</a></li>
+        <li><a href="#zero" class="hover:underline">Zero Impact</a></li>
+        <li><a href="#dual" class="hover:underline">Dual Use</a></li>
+        <li><a href="#team" class="hover:underline">Our Team</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-50 py-20 text-center">
+    <div class="container mx-auto px-6">
+      <h1 class="text-4xl font-bold mb-4">Water Mission Ukraine</h1>
+      <p class="text-lg max-w-2xl mx-auto">Delivering clean water and rebuilding Ukraine's water infrastructure through sustainable and EU-compliant technologies.</p>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section id="mission" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4">Mission</h2>
+      <p>In Ukraine, to move water and make it clean for children who drink the water and swim in the river. As an American company, and in conformance with the Budapest Memorandum, we propose to assist Ukraine in defending the country, winning the war to the 1991 internationally recognized boundaries, rebuild the country damaged by the war and upgrade the water environment in conformance with EU standards to facilitate Ukraine's entrance into the Union.</p>
+    </div>
+  </section>
+
+  <!-- Ukraine Strategy -->
+  <section id="strategy" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4">Ukraine Strategy</h2>
+      <p>To provide engineering design, finance, construction and operation for wastewater, potable water, stormwater and other projects plus environmental monitoring in Ukraine to facilitate compliance with European Union (EU) environmental standards.</p>
+    </div>
+  </section>
+
+  <!-- EU Compliance -->
+  <section id="eu" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4">EU Environmental Standards</h2>
+      <p>We aim to construct water facilities that have zero detrimental impact on the environment, no cost to the rate payer and zero or negative greenhouse gas footprint by using best available proven technology and incorporating green energy production into our treatment and pumping projects.</p>
+    </div>
+  </section>
+
+  <!-- Zero Impact -->
+  <section id="zero" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4">Zero Environmental Impact</h2>
+      <p>Green energy production will be mostly solar, wind, biogas balanced by cleaned biogas storage, batteries and pumped storage. Our goal is environmental balance and sustainable infrastructure.</p>
+    </div>
+  </section>
+
+  <!-- Dual Use -->
+  <section id="dual" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4">Dual Military/Civil Use</h2>
+      <p>In a dual, military/civilian use manner, we assist the Ukrainian military in the design and construction of defensive fortifications, river crossings, roads, and air/water/land drones integrated with water infrastructure projects.</p>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+   <section id="team" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-6 text-center">Our Team</h2>
+      <div class="horizontal-scroll-container">
+        <div class="horizontal-scroll-content gap-4">
+          <!-- BEGIN TEAM CARDS -->
+          <div class="p-4 border rounded shadow bg-white w-64 mx-2 hover:scale-105 transition-transform">
+            <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4"></div>
+            <p class="text-center text-sm font-medium">Donald R. Flett, P.E: President, CEO and chief engineer.</p>
+          </div>
+          <div class="p-4 border rounded shadow bg-white w-64 mx-2 hover:scale-105 transition-transform">
+            <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4"></div>
+            <p class="text-center text-sm font-medium">Alan Rogers, P.E.: Assistant Chief Engineer, Instrumentation and Control</p>
+          </div>
+          <div class="p-4 border rounded shadow bg-white w-64 mx-2 hover:scale-105 transition-transform">
+            <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4"></div>
+            <p class="text-center text-sm font-medium">Daniel Aspleaf: Vice President, Director of Environmental Services</p>
+          </div>
+          <!-- Повторяйте блок выше для каждого участника -->
+          <!-- Добавлены только несколько карточек в примере. Добавлю остальные по запросу. -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <p>Email: watersolution@test.com</p>
+      <p>Phone: +38000000000</p>
+      <p>Address: New York</p>
+      <p><a href="https://www.facebook.com/" class="text-blue-700 hover:underline">Facebook Page</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    &copy; 2025 Water Mission Ukraine. All rights reserved.
+  </footer>
+</body>
+</html>
