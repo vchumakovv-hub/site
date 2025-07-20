@@ -1,130 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Water Mission Ukraine</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @keyframes slowScroll {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-50%); }
-    }
-    .scroll-container {
-      height: 400px;
-      overflow: hidden;
-      position: relative;
-    }
-    .scroll-content {
-      animation: slowScroll 60s linear infinite;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Mission Ukraine - Investor Overview</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="font-sans bg-white text-gray-900">
-  <!-- Navigation -->
-  <header class="bg-blue-900 text-white sticky top-0 z-50">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <div class="text-xl font-bold">Water Mission Ukraine</div>
-      <ul class="flex gap-4 text-sm font-medium">
-        <li><a href="#mission" class="hover:underline">Mission</a></li>
-        <li><a href="#strategy" class="hover:underline">Ukraine Strategy</a></li>
-        <li><a href="#eu" class="hover:underline">EU Compliance</a></li>
-        <li><a href="#zero" class="hover:underline">Zero Impact</a></li>
-        <li><a href="#dual" class="hover:underline">Dual Use</a></li>
-        <li><a href="#team" class="hover:underline">Our Team</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="bg-blue-50 py-20 text-center">
-    <div class="container mx-auto px-6">
-      <h1 class="text-4xl font-bold mb-4">Water Mission Ukraine</h1>
-      <p class="text-lg max-w-2xl mx-auto">Delivering clean water and rebuilding Ukraine's water infrastructure through sustainable and EU-compliant technologies.</p>
-    </div>
-  </section>
-
-  <!-- Mission -->
-  <section id="mission" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-4">Mission</h2>
-      <p>In Ukraine, to move water and make it clean for children who drink the water and swim in the river. As an American company, and in conformance with the Budapest Memorandum, we propose to assist Ukraine in defending the country, winning the war to the 1991 internationally recognized boundaries, rebuild the country damaged by the war and upgrade the water environment in conformance with EU standards to facilitate Ukraine's entrance into the Union.</p>
-    </div>
-  </section>
-
-  <!-- Ukraine Strategy -->
-  <section id="strategy" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-4">Ukraine Strategy</h2>
-      <p>To provide engineering design, finance, construction and operation for wastewater, potable water, stormwater and other projects plus environmental monitoring in Ukraine to facilitate compliance with European Union (EU) environmental standards.</p>
-    </div>
-  </section>
-
-  <!-- EU Compliance -->
-  <section id="eu" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-4">EU Environmental Standards</h2>
-      <p>We aim to construct water facilities that have zero detrimental impact on the environment, no cost to the rate payer and zero or negative greenhouse gas footprint by using best available proven technology and incorporating green energy production into our treatment and pumping projects.</p>
-    </div>
-  </section>
-
-  <!-- Zero Impact -->
-  <section id="zero" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-4">Zero Environmental Impact</h2>
-      <p>Green energy production will be mostly solar, wind, biogas balanced by cleaned biogas storage, batteries and pumped storage. Our goal is environmental balance and sustainable infrastructure.</p>
-    </div>
-  </section>
-
-  <!-- Dual Use -->
-  <section id="dual" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-4">Dual Military/Civil Use</h2>
-      <p>In a dual, military/civilian use manner, we assist the Ukrainian military in the design and construction of defensive fortifications, river crossings, roads, and air/water/land drones integrated with water infrastructure projects.</p>
-    </div>
-  </section>
-
-  <!-- Our Team -->
-   <section id="team" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-6 text-center">Our Team</h2>
-      <div class="horizontal-scroll-container">
-        <div class="horizontal-scroll-content gap-4">
-          <!-- BEGIN TEAM CARDS -->
-          <div class="p-4 border rounded shadow bg-white w-64 mx-2 hover:scale-105 transition-transform">
-            <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4"></div>
-            <p class="text-center text-sm font-medium">Donald R. Flett, P.E: President, CEO and chief engineer.</p>
-          </div>
-          <div class="p-4 border rounded shadow bg-white w-64 mx-2 hover:scale-105 transition-transform">
-            <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4"></div>
-            <p class="text-center text-sm font-medium">Alan Rogers, P.E.: Assistant Chief Engineer, Instrumentation and Control</p>
-          </div>
-          <div class="p-4 border rounded shadow bg-white w-64 mx-2 hover:scale-105 transition-transform">
-            <div class="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4"></div>
-            <p class="text-center text-sm font-medium">Daniel Aspleaf: Vice President, Director of Environmental Services</p>
-          </div>
-          <!-- Повторяйте блок выше для каждого участника -->
-          <!-- Добавлены только несколько карточек в примере. Добавлю остальные по запросу. -->
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex-shrink-0 text-xl font-bold text-blue-700">Water Mission Ukraine</div>
+        <div class="flex space-x-6">
+          <a href="#mission" class="hover:text-blue-600">Company Water Mission</a>
+          <a href="#investment" class="hover:text-blue-600">Initial Investment Goal</a>
+          <a href="#team" class="hover:text-blue-600">Our Team</a>
+          <a href="#marketing" class="hover:text-blue-600">Marketing</a>
+          <a href="#markets" class="hover:text-blue-600">Markets</a>
+          <a href="#military" class="hover:text-blue-600">Military</a>
+          <a href="#costs" class="hover:text-blue-600">Project Costs</a>
         </div>
       </div>
     </div>
-  </section>
+  </nav>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold mb-4">Contact</h2>
-      <p>Email: watersolution@test.com</p>
-      <p>Phone: +38000000000</p>
-      <p>Address: New York</p>
-      <p><a href="https://www.facebook.com/" class="text-blue-700 hover:underline">Facebook Page</a></p>
-    </div>
-  </section>
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-8 space-y-16">
+    <!-- Company Water Mission -->
+    <section id="mission" class="bg-white rounded-xl shadow p-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Company Water Mission</h2>
+      <p class="mb-2">In Ukraine, to move water and make it clean for children who drink the water and swim in the river.</p>
+      <p class="mb-2">As an American company, and in conformance with the Budapest Memorandum, we propose to assist Ukraine in defending the country, winning the war to the 1991 internationally recognized boundaries, rebuild the country damaged by the war and upgrade the water environment in conformance with EU standards to facilitate Ukraine's entrance into the Union.</p>
+      <p class="mb-2">To provide engineering design, finance, construction and operation for wastewater, potable water, stormwater and other projects plus environmental monitoring in Ukraine to facilitate compliance with European Union (EU) environmental standards.</p>
+      <p class="mb-2">To construct water facilities that have zero detrimental impact on the environment, no cost to the rate payer and zero or negative greenhouse gas footprint by using best available proven technology and by incorporating green energy production into our treatment and pumping projects. Green energy production will be mostly solar, wind, biogas balanced by cleaned biogas storage, batteries and pumped storage.</p>
+      <p class="mb-2">In a dual, military/civilian use manner, to assist the Ukrainian military in the design and construction of defensive fortifications, river crossings, roads and air/water/land drones integrated with Artificial Intelligence (AI). For example, construction equipment and techniques used for military fortification construction can clearly be used for water, sewer and other utility construction. Drone technology for military use can be used for environmental monitoring integrated with surface water and other environmental mathematical modeling.</p>
+      <p class="mb-2">But our prime military activity is sea drones due to our location on the Black Sea front lines throughout the war, our hydraulic capabilities, AI knowledge and experience, contacts with the Ukrainian Navy and merchant marine, development of contacts with the navies of various countries.</p>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
-    &copy; 2025 Water Mission Ukraine. All rights reserved.
-  </footer>
+    <!-- Initial Investment Goal -->
+    <section id="investment" class="bg-white rounded-xl shadow p-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Initial Investment Goal</h2>
+      <p class="mb-2">Our initial investment goal is <span class="font-semibold text-green-700">$5,000,000</span> for the first year for marketing, the purchase of environmental testing laboratory equipment, construction machinery, salaries, consultants, legal/accounting/insurance, buildings for office, laboratory, construction equipment and materials.</p>
+      <p class="mb-2">Our Team: We are in the process of final development of the team and not all assignments are final at this point.</p>
+    </section>
+
+    <!-- Our Team -->
+    <section id="team" class="bg-white rounded-xl shadow p-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-8">Our Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Team Cards -->
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Donald R. Flett, P.E</h3>
+          <p class="text-sm">President, CEO and chief engineer.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Alan Rogers, P.E.</h3>
+          <p class="text-sm">Assistant Chief Engineer, Instrumentation and Control</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Daniel Aspleaf</h3>
+          <p class="text-sm">Vice President, Director of Environmental Services</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Ronald P. Egge, CPA</h3>
+          <p class="text-sm">Treasurer, Chief Financial Officer and investment coordinator.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Michael D. Flett</h3>
+          <p class="text-sm">Secretary and renewable energy finance.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Gregory Burde</h3>
+          <p class="text-sm">Equipment representative and coordinator</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Sergiy Dmitruk, Esq.</h3>
+          <p class="text-sm">Business law and government advisor, Ukraine</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Dianne Alexander, Esq.</h3>
+          <p class="text-sm">Environmental law</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Victor Rud, Esq.</h3>
+          <p class="text-sm">International law</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Marta Harrison</h3>
+          <p class="text-sm">American political consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Marcia Rawlyk</h3>
+          <p class="text-sm">American political consultant.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Richard Ambrosio</h3>
+          <p class="text-sm">Environmental enforcement</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Nick Binder</h3>
+          <p class="text-sm">Environmental agency, government funding consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Stanley Cach, P.E.</h3>
+          <p class="text-sm">Government funding consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Sergei Morkovnik</h3>
+          <p class="text-sm">Mechanical/civil engineer, AutoCad designer</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Dr. Khac-Suon Su</h3>
+          <p class="text-sm">Structural engineering</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Stephan Michael Peterson. R.A.</h3>
+          <p class="text-sm">Architecture, urban planning, enhanced computer rendering</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Donald L. Beaty, P.E.</h3>
+          <p class="text-sm">Electrical consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Stuart Remz</h3>
+          <p class="text-sm">Hydrogeologist</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Joseph Skupien</h3>
+          <p class="text-sm">Hydrologist, stream mathematical modeling</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Laura Brinkerhoff</h3>
+          <p class="text-sm">Geologist, contaminated sites, environmental services</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Joseph Stanick, P.E.</h3>
+          <p class="text-sm">Construction management</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Robert Hamilton</h3>
+          <p class="text-sm">Mechanical construction consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Fred Devens</h3>
+          <p class="text-sm">Mechanical construction consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Donald Bouch</h3>
+          <p class="text-sm">Construction, buried piping, excavation consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Richard Ramirez, P.E.</h3>
+          <p class="text-sm">Structural and geotechnical engineering</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">A.C. Schultes</h3>
+          <p class="text-sm">Deep well construction</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Tracy Young</h3>
+          <p class="text-sm">Screw pump consultant.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Ralph Tingler</h3>
+          <p class="text-sm">Pump consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Gary Haggard</h3>
+          <p class="text-sm">MBR and equipment consultant.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Calvin Flett</h3>
+          <p class="text-sm">Mathematician; solar energy finance</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Sika, Ukraine</h3>
+          <p class="text-sm">Evaluation and repair of reinforced concrete sanitary tanks and structures</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Siemans, Ukraine</h3>
+          <p class="text-sm">Instrumentation and controls</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Andrew Thuman, P.E.</h3>
+          <p class="text-sm">Mathematical modeling of surface waters</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Thomas Meholic</h3>
+          <p class="text-sm">Process consultants</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Joseph Bonaccorso</h3>
+          <p class="text-sm">Process consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Stephen Fuhro</h3>
+          <p class="text-sm">Civil/site design, AutoCad coordinator</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Bryce Bennett</h3>
+          <p class="text-sm">Landscape architect</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Michael LaBarbere</h3>
+          <p class="text-sm">Insurance consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Gregory Flett, P.E.</h3>
+          <p class="text-sm">LEEDS building design, groundwater radiation consultant.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Copyright and Patent Law</h3>
+          <p class="text-sm">American, Ukrainian and International</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">US Government Affairs</h3>
+          <p class="text-sm">Senator Cory Booker and Congressman Chris Smith, Donald Flett</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Ukrainian Government Affairs</h3>
+          <p class="text-sm">Ronald Egge, Sergiy Dmitruk, Daniel Aspleaf, Vadem Danek</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">EU Standards and Compatibility</h3>
+          <p class="text-sm">Donald Flett, Sergy Dmitruk, Esq.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">NATO Standards and Compatibility</h3>
+          <p class="text-sm">General Ben Hodges, (ret.)</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Modern Monetary Theory and Practice</h3>
+          <p class="text-sm">Professor Randy Wray</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Drone Technology and AI</h3>
+          <p class="text-sm">Kevin Kraison, Viktor Chumakovv</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Regional Marketing Director</h3>
+          <p class="text-sm">Natalie Poloz- Black Sea Area</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Architecture and Urban Planning</h3>
+          <p class="text-sm">Steven Michael Peterson, R.A.</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Olga Kameneva</h3>
+          <p class="text-sm">Lead simultaneous translator, interpretor</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Natalie Poloz</h3>
+          <p class="text-sm">Black Sea marketing manager</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Daniel Bigler</h3>
+          <p class="text-sm">Plant operations, design build, contaminated site cleanup consultant</p>
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow flex flex-col">
+          <h3 class="font-bold text-lg text-blue-800 mb-1">Michael Hogan</h3>
+          <p class="text-sm">Instrumentation/control, design build, electrical consultant</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketing -->
+    <section id="marketing" class="bg-white rounded-xl shadow p-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Marketing</h2>
+      <p class="mb-2">Our sales team of Natalie Poloz and Olga Kameneva are local professional women who have stayed living, taking care of their children and working in Kherson throughout the war including the initial battle for the city, Russian military occupation, liberation, the Kakhovka Dam flood and daily artillery and drone bombardment. They have extensive local contacts in government, the military (Ms. Kameneva is a captain in the Ukrainian Naval reserves), medical field and humanitarian aid. Ms. Poloz is a certified medical professional, and experienced medical sales person with medical banking experience who managed one of the World Central Kitchen food distribution centers after liberation. Ms. Kameneva has contacts with local media and is a certified English interpreter and simultaneous translator so all press releases, marketing materials and presentations can be entirely in flawless Ukrainian for highest sales impact. The sales team works under the general direction of Donald Flett who makes the formal presentations to government bodies.</p>
+      <p class="mb-2">We have identified and calculated the cost to address water and wastewater issues in the 460 largest cities and towns in Ukraine and to meet the EU environmental water standards. Our sales team has started to contacting the relevant government officials in these cities and towns to offer an initial analysis of their needs and to present a formal proposal for a conceptual engineering, financial, and environmental evaluation with the estimated cost per home per month for water and sewer service.</p>
+    </section>
+
+    <!-- Markets -->
+    <section id="markets" class="bg-white rounded-xl shadow p-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Markets</h2>
+      <p class="mb-2">Water, wastewater and stormwater facilities for Ukrainian cities and municipalities, industry, agriculture, irrigation, contaminated sites and hydroelectric power generation. Water drones for automated monitoring and cleanup particularly of bottom sediments. Geographical markets are Ukraine, US and Europe particularly if we can be quicker, cheaper and better than other engineering companies. Advantages are lower salaries for high grade technical personnel in Ukraine, the latent technical talent here and the push that the war has given to local innovations.</p>
+    </section>
+
+    <!-- Military -->
+    <section id="military" class="bg-white rounded-xl shadow p-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Military</h2>
+      <p class="mb-2">Mine detection and removal in water and on land. High speed underwater drones and torpedoes using the super cavitation principal and pre-programmed navigation technique. Construction of defensive fortifications and river crossings. Rapid English instructions for Ukrainian military to facilitate use of western weapons. Integration of AI into new weapons systems particularly drones.</p>
+    </section>
+
+    <!-- Project Costs -->
+    <section id="costs" class="bg-white rounded-xl shadow p-8">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Project Costs</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full table-auto text-sm mb-6">
+          <thead class="bg-blue-100">
+            <tr>
+              <th class="px-4 py-2 text-left">Project</th>
+              <th class="px-4 py-2 text-right">Cost</th>
+              <th class="px-4 py-2 text-left">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b">
+              <td class="px-4 py-2">Wastewater, new plus upgrade</td>
+              <td class="px-4 py-2 text-right">$36,000,000,000</td>
+              <td class="px-4 py-2">460 largest cities and towns</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Wastewater O&amp;M 20 years</td>
+              <td class="px-4 py-2 text-right">$36,000,000,000</td>
+              <td class="px-4 py-2"></td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Potable water, new plus upgrade</td>
+              <td class="px-4 py-2 text-right">$18,000,000,000</td>
+              <td class="px-4 py-2">50% of wastewater</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Potable Water O&amp;M 20 years</td>
+              <td class="px-4 py-2 text-right">$18,000,000,000</td>
+              <td class="px-4 py-2"></td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Stormwater, new plus upgrade</td>
+              <td class="px-4 py-2 text-right">$12,000,000,000</td>
+              <td class="px-4 py-2">33% of wastewater</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Stormwater O&amp;M 20 years</td>
+              <td class="px-4 py-2 text-right">$6,000,000,000</td>
+              <td class="px-4 py-2"></td>
+            </tr>
+            <tr class="border-b font-bold">
+              <td class="px-4 py-2">Total Municipal</td>
+              <td class="px-4 py-2 text-right">$126,000,000,000</td>
+              <td class="px-4 py-2"></td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Industrial Wastewater/water treatment</td>
+              <td class="px-4 py-2 text-right">$18,000,000,000</td>
+              <td class="px-4 py-2">33% of municipal wastewater and water</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Contaminated sites</td>
+              <td class="px-4 py-2 text-right">$60,000,000,000</td>
+              <td class="px-4 py-2">Ratio with New Jersey; 30 years operation, 20%</td>
+            </tr>
+            <tr class="border-b font-bold">
+              <td class="px-4 py-2">Total Industrial</td>
+              <td class="px-4 py-2 text-right">$78,000,000,000</td>
+              <td class="px-4 py-2"></td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Irrigation, canals</td>
+              <td class="px-4 py-2 text-right">$560,000,000</td>
+              <td class="px-4 py-2">Kherson and Crimea, World Bank, S18</td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Drainage</td>
+              <td class="px-4 py-2 text-right">$560,000,000</td>
+              <td class="px-4 py-2">Kherson and Crimea, World Bank, S21</td>
+            </tr>
+            <tr class="border-b font-bold">
+              <td class="px-4 py-2">Total Agriculture</td>
+              <td class="px-4 py-2 text-right">$1,120,000,000</td>
+              <td class="px-4 py-2"></td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Mine removal</td>
+              <td class="px-4 py-2 text-right">$37,000,000,000</td>
+              <td class="px-4 py-2">World Bank estimate June, 2024</td>
+            </tr>
+            <tr class="border-b font-bold">
+              <td class="px-4 py-2">Total Defense</td>
+              <td class="px-4 py-2 text-right">$37,000,000,000</td>
+              <td class="px-4 py-2"></td>
+            </tr>
+            <tr class="border-b">
+              <td class="px-4 py-2">Environmental Study (Kakhovka Dam)</td>
+              <td class="px-4 py-2 text-right">$60,000,000</td>
+              <td class="px-4 py-2">UNESCO</td>
+            </tr>
+            <tr class="border-b font-bold">
+              <td class="px-4 py-2">Total Projected Revenue</td>
+              <td class="px-4 py-2 text-right">$242,000,000,000</td>
+              <td class="px-4 py-2"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-xs text-gray-500">For more details, see references in the full company overview.</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
